@@ -1,0 +1,136 @@
+    .nimbus-bikes-bg{
+      padding: 60px 0;
+    }
+    .bik-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px
+    }
+    .bik-img{
+      display: grid;
+    }
+    .bik-img img{
+      grid-area: 1/1;
+      border-radius: 4px;
+    }
+    .bik-img > div{
+      grid-area: 1/1;
+      color: white;
+      margin-top: 1rem;
+      display: inline-block;
+      text-align: right;
+    }
+    .bik-img > div > span{
+      background-color: black;
+      display: inline-block;
+      padding: 10px;
+      border-radius: 4px 0 0 4px;
+      font-size: 1.125rem;
+      font-weight: bold;
+    }
+    .magic-bikes-bg{
+      padding: 60px 0;
+      background-image: linear-gradient(to right, white 30%, black 30%);
+    }
+    .nebula-bikes-bg{
+      padding: 60px 0;
+    }
+    .bik-conteudo > h3{
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .bik-conteudo > p{
+      color: #595959;
+      margin-bottom: 30px;
+    }
+    .bik-conteudo > h3::before{
+      content: '';
+      display: block;
+      width: 12px;
+      height: 8px;
+      background-color: #f2a50c;
+      margin-bottom: 10px;
+    }
+    .bik-conteudo > div > ul > li{
+      font: 500 1.125rem/1.35 "Poppins", sans-serif;
+      margin-bottom: 12px;
+      color: #595959;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .bik-conteudo > div > ul > li:nth-child(1):before{
+      content: '';
+      width: 32px;
+      height: 32px;
+      display: inline-block;
+      background-image: url('../../img/icones/eletrica.svg');
+      background-position: center center;
+    }
+    .bik-conteudo > div > ul > li:nth-child(2):before{
+      content: '';
+      width: 32px;
+      height: 32px;
+      display: inline-block;
+      background-image: url('../../img/icones/carbono.svg');
+      background-position: center center;
+    }    .bik-conteudo > div > ul > li:nth-child(3):before{
+      content: '';
+      width: 32px;
+      height: 32px;
+      display: inline-block;
+      background-image: url('../../img/icones/velocidade.svg');
+      background-position: center center;
+    }    .bik-conteudo > div > ul > li:nth-child(4):before{
+      content: '';
+      width: 32px;
+      height: 32px;
+      display: inline-block;
+      background-image: url('../../img/icones/rastreador.svg');
+      background-position: center center;
+    }
+    .contatoBotao {
+      display: inline-block;
+      padding: 16px 32px;
+      box-shadow: 0px 1px 2px rgb(0 0 0 / 10%);
+      border-radius: 4px;
+      text-transform: uppercase;
+      font: 600 1.125rem/1.35 "Poppins", sans-serif;
+      color: #332200;
+      border: none;
+      cursor: pointer;
+      background-image: linear-gradient(#ffbf00, #f2a50c);
+    }
+    .bik-conteudo > div{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .bik-conteudo > div > div{
+      align-self: end;
+      justify-self: end;
+    }
+    #magic{
+      color: white;
+    }
+    #magic p{
+      color: #b2b2b2;
+    }
+    #magic div ul li{
+      color: #b2b2b2;
+    }
+
+    @media (max-width: 800px){
+      .bik-container{
+      grid-template-columns: 1fr;
+    }
+      .magic-bikes-bg{
+        background-image: linear-gradient(to right, black , black );
+      }
+    }
+    
+    @media (max-width: 450px){
+      .bik-conteudo > div{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    }

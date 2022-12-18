@@ -1,0 +1,233 @@
+.nimbus-bg{
+  background-color: rgba(0, 0, 0, 0.911);
+  color: white;
+  padding-bottom: 60px;
+}
+.nimbus-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  gap: 40px;
+  align-items: start;
+}
+.nimbus-container img{
+  max-width: 100%;
+}
+.nimbus-img{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.nimbus-img img{
+  flex: 1;
+  min-width: 260px;
+  border-radius: 4px;
+}
+.nimbus-img img:nth-child(1){
+  min-width: 100%;
+}
+.nimbus-sec1 > p{
+  margin-bottom: 30px;
+}
+.nimbus-botao{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-bottom: 40px;
+  gap: 12px;
+}
+.nimbus-botao a{
+  display: flex;
+  align-items: center;
+}
+.botao-infos{
+  display: grid;
+  gap: 5px;
+  justify-content: start;
+  text-align: center;
+}
+.botao-infos span{
+  padding: 5px;
+  font-size: 0.8rem;
+  background-color: black;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.nimbus-sec2 h3{
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+.nimbus-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: black;
+  padding: 30px;
+  gap: 40px;
+  border-radius: 4px;
+  margin-bottom: 30px
+}
+.nimbus-list img {
+  margin-bottom: 5px;
+}
+.nimbus-list h3 {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.nimbus-list p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgb(153, 153, 153);
+}
+.nimbus-sec3 h3{
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+.ficha-list{
+  background-color: black;
+  padding: 30px;
+  border-radius: 4px;
+}
+.ficha-list li{
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(43, 43, 43, 0.432);
+  padding-bottom: 8px;
+}
+.ficha-list li:last-child{
+  border-bottom: none;
+}
+.bicicleta-bg{
+  padding: 100px 0px;
+}
+.bicicleta-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.bicicleta-container > h2{
+  margin-bottom: 50px;
+}
+.bicicleta-lista{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  overflow-x: auto;
+}
+.bicicleta-lista li img{
+  border-radius: 4px;
+  min-width: 300px;
+}
+.bicicleta-lista li a{
+  color:  black;
+}
+.bicicleta-lista li h3{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+.bicicleta-lista li h3::before{
+  display: inline-block;
+  width: 10px;
+  height: 8px;
+  background-color: gold;
+  content: '';
+  transition: 0.2s;
+}
+.bicicleta-lista li:hover h3::before{
+  width: 24px;
+}
+.bicicleta-lista span{
+  margin-left: 18px;
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+  color: #595959;
+  font-weight: bold;
+}
+.contatoBotao {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 16px 32px;
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+  text-transform: uppercase;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  color: #332200;
+  border: none;
+  cursor: pointer;
+  background-image: linear-gradient(#ffbf00, #f2a50c);
+  ;
+}
+.bicicleta-aside{
+  padding: 60px 0;
+  background-image: linear-gradient(to bottom, white 20%, rgba(0, 0, 0, 0.911) 20% );
+  box-shadow: inset 0 -100px 0 0 black;
+}
+.aside-container{
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.aside-container > img{
+  border-radius: 4px;
+  object-fit: cover;
+}
+.aside-container > div > h2{
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+.aside-container > div > p{
+  color: #cccccc;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1200px){
+  .aside-container > div > h2{
+  font-size: 3rem;
+}
+}
+@media (max-width: 1000px){
+  .aside-container > div > h2{
+  font-size: 2.5rem;
+}
+  .aside-container > div > p{
+  font-size: 1rem;
+}
+}
+@media (max-width: 800px){
+  .bicicleta-aside{
+  padding: 60px 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.911) 85%, black 85% );
+}
+.aside-container{  
+  grid-template-columns: 1fr;
+}
+.aside-container > img{  
+  height: 300px;
+  width: 100%;
+  object-position: center top;
+}
+.aside-container > div{  
+  order: -1;
+}
+.nimbus-container{
+  grid-template-columns: 1fr;
+}
+
+.nimbus-img img{
+  flex: 1;
+  min-width: 140px;
+  border-radius: 4px;
+}
+.nimbus-conteudo{
+  order:-1
+}
+}
